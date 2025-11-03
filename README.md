@@ -65,3 +65,8 @@ Please adjust the the critical paths defined in the first couple of cells of the
 
 Certain tasks are configured to run as Slurm jobs on a compute cluster. The Slurm script setup is handled in `scripts/utils/utils.py` by the function `create_slurm_submit_script()`.
 Please modify this script, and any references to it in the notebook, based on how your system accepts jobs.
+
+
+## Feng notes####
+
+1) start developing on 11/3/2025
