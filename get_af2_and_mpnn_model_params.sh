@@ -7,7 +7,7 @@ echo "Downloading LigandMPNN and proteinMPNN model weights"
 echo "Please note that this script only downloads the minimal default weight files used in the design pipeline!"
 echo "To download all of the proteinMPNN model weights please run the bash script found in lib/LigandMPNN/get_model_params.sh"
 
-dir="lib/LigandMPNN/model_params"
+dir="/mnt/data/heme_rfdiffusion_data/LigandMPNN/model_params"
 mkdir -p $dir
 
 #Original ProteinMPNN weights
@@ -51,8 +51,13 @@ wget -q https://files.ipd.uw.edu/pub/ligandmpnn/solublempnn_v_48_020.pt -O ${dir
 
 #### AF2 model weights
 echo "Downloading AlphaFold2 model weights"
-cd lib/alphafold
-mkdir -p model_weights/params && cd model_weights/params
+#cd lib/alphafold
+#mkdir -p model_weights/params && cd model_weights/params
+
+cd /mnt/data/heme_rfdiffusion_data/alphafold/model_params
+
 wget https://storage.googleapis.com/alphafold/alphafold_params_2021-07-14.tar
 tar --extract --verbose --file=alphafold_params_2021-07-14.tar
-cd ../../../..
+#cd ../../../..
+
+cd ~/Feng/hg/heme_binder_diffusion_ff
