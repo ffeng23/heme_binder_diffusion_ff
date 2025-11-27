@@ -1,6 +1,6 @@
 [submodule "lib/LigandMPNN"]
 	path = lib/LigandMPNN
-	url = https://github.com/dauparas/LigandMPNN.git
+	url = https://github.com/ffeng23/LigandMPNN_ff.git
 [submodule "lib/alphafold"]
 	path = lib/alphafold
 	url = https://github.com/google-deepmind/alphafold.git
