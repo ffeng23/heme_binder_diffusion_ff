@@ -102,8 +102,10 @@ if __name__ == "__main__":
             # continue
         if args.old_format is True:
             maskdict[os.path.basename(trbfile).replace(".trb", "")] = {"A": mask_seqpos}
+            #maskdict[trbfile.replace(".trb", "")] = {"A": mask_seqpos}
         else:
             maskdict[os.path.basename(trbfile).replace(".trb", "")] = ' '.join([f"A{r}" for r in mask_seqpos])
+            #maskdict[trbfile.replace(".trb", "")] = ' '.join([f"A{r}" for r in mask_seqpos])
 
     with open(args.out, 'w') as f:
         f.write(json.dumps(maskdict) + '\n')
