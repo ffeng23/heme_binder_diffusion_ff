@@ -2,12 +2,11 @@
 
 #make new directory for model parameters
 #e.g.   bash get_model_params.sh "./model_params"
-
 echo "Downloading LigandMPNN and proteinMPNN model weights"
 echo "Please note that this script only downloads the minimal default weight files used in the design pipeline!"
 echo "To download all of the proteinMPNN model weights please run the bash script found in lib/LigandMPNN/get_model_params.sh"
 
-dir="/mnt/data/heme_rfdiffusion_data/LigandMPNN/model_params"
+dir="./lib/LigandMPNN/model_params"
 mkdir -p $dir
 
 #Original ProteinMPNN weights
@@ -54,10 +53,11 @@ echo "Downloading AlphaFold2 model weights"
 #cd lib/alphafold
 #mkdir -p model_weights/params && cd model_weights/params
 
-cd /mnt/data/heme_rfdiffusion_data/alphafold/model_params
+mkdir -p ./lib/alphafold/model_params
+cd ./lib/alphafold/model_params
 
 wget https://storage.googleapis.com/alphafold/alphafold_params_2021-07-14.tar
 tar --extract --verbose --file=alphafold_params_2021-07-14.tar
 #cd ../../../..
 
-cd ~/Feng/hg/heme_binder_diffusion_ff
+#cd ~/Feng/hg/heme_binder_diffusion_ff
