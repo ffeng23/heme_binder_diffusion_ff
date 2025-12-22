@@ -7,3 +7,4 @@ Analysis AF2.ipynb
 __pycache__/
 *.pyc
 
+lib/alphafold/model_weights/
