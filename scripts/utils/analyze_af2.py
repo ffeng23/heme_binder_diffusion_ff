@@ -195,6 +195,7 @@ def main():
     scores = pd.read_csv(scorefile, header=0)
 
     print(f"Only calculating RMSD for predictions with lDDT >= {lddt_cutoff:.1f}")
+    print(f"---DEBUGGING: type of scores.lDDT is {scores.lDDT}")
     if len(scores.loc[scores.lDDT > lddt_cutoff]) == 0:
         sys.exit(f"No designs with lDDT above {lddt_cutoff}. Nothing to analyze")
     else:

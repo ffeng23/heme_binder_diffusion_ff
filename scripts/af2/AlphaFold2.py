@@ -37,7 +37,7 @@ def predict_sequences(sequences, models, nrecycles, scorefile=None, random_seed=
         model_config.data.common.max_extra_msa = 1
         model_config.data.eval.max_msa_clusters = 1
 
-        model_params = data.get_model_haiku_params(model_name=model_name, data_dir=f"{SCRIPT_DIR}/../../lib/alphafold/model_weights")
+        model_params = data.get_model_haiku_params(model_name=model_name, data_dir=f"/mnt/data/heme_rfdiffusion_data/alphafold/model_params")
         model_runner = model.RunModel(model_config, model_params)
         model_runners[model_name] = model_runner
     print(f"Setting up models took {(timer() - _models_start):.3f} seconds.")

@@ -39,7 +39,7 @@ if args.fasta is not None:
 else:
     sys.exit(1)
 
-with open(args.scorefile, "a") as file:
+with open(args.scorefile, "w") as file:
     file.write("ID,Name,Sequence,Model/Tag,Output_PDB,lDDT,Time\n")
 
 
