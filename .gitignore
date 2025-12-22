@@ -8,3 +8,4 @@ __pycache__/
 *.pyc
 
 lib/alphafold/model_weights/
+_wip_patches/
