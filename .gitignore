@@ -1,0 +1,32 @@
+
+# ---- RFdiffusion / pipeline outputs (do not commit) ----
+.done
+**/out/
+**/*.pdb
+**/*.trb
+
+# Jupyter / logs / temp
+.ipynb_checkpoints/
+jupyter.log
+nohup.out
+commands_diffusion
+
+# Python cache
+__pycache__/
+*.pyc
+
+# ---- Hydra outputs ----
+outputs/
+**/outputs/
+**/.hydra/
+
+# ---- Logs ----
+*.log
+**/*.log
+
+# ---- Pipeline generated scripts / configs ----
+run.log
+output.log
+submit_*.sh
+commands_*
+masked_pos.jsonl
