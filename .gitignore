@@ -30,3 +30,6 @@ output.log
 submit_*.sh
 commands_*
 masked_pos.jsonl
+
+# Local work dir
+protein_design/
