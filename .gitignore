@@ -33,3 +33,6 @@ masked_pos.jsonl
 
 # Local work dir
 protein_design/
+
+# --- generated outputs ---
+inpainting/
